@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    background-color: rgb(252, 242, 228);
+    margin: 0;
+}
+
+
+/* header */
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    /* border-bottom: solid black 1px; */
+}
+
+.tienda {
+    font-size: 20px;
+    font-weight: 220;
+    width: 120px;
+    background-color: yellow;
+    border: solid black 3px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.logoIo {
+    height: 130px;
+    cursor: pointer
+}
+
+li {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* font-weight: bold; */
+    font-size: 20px;
+    margin: 0px 20px;
+}
+
+/* index */
+
+.fotoinicio {
+    display: flex;
+    flex-direction: row;
+    margin:5px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoppal {
+    border: yellow solid 2px;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+/* Contacto */
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloFormulario {
+    font-size: 20px;
+}
+
+.formulario {
+    display: grid;
+    flex-direction: row;
+    margin: 10px 200px 10px 200px;
+    background-color: antiquewhite;
+    border: yellow 2px solid;
+    border-radius: 20px;
+    padding: 20px 10px;
+    font-size: 20px;
+
+}
+
+label,
+textarea,
+input {
+    font-family: inherit;
+    font-size: 100%;
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(243, 234, 234);
+    border-color: black;
+
+}
+
+.pie {
+    font-size: 20px;
+    text-align: center;
+    border: 1px;
+    margin-top: 50px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* sombre mi */
+
+.sobreMi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    object-fit: contain;
+    margin-top: 50px;
+}
+
+.cuadro-sobre-mi {
+
+    border: yellow 2px solid;
+    border-radius: 10px;
+    width: 700px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.tituloSobreMi {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    text-justify: center;
+}
+
+.img-biografia {
+    width: 500px;
+    border-radius: 10px;
+    border: yellow 2px solid;
+
+}
+
+/* galeria */
+
+.contenedorGaleria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 300px;
+    padding: 15px;
+    grid-gap: 10px;
+}
+
+.itemGaleria {
+    border: solid yellow 2px;
+    border-radius: 20px;
+}
+
+.imgGaleria {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.itemGaleria:nth-child(1) {
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
+
+.itemGaleria:nth-child(4) {
+    grid-row-start: span 2;
+
+}
+
+.itemGaleria:nth-child(5) {
+    grid-row-start: span 3;
+    grid-column-end: span 2;
+}
+
+.itemGaleria:nth-child(7) {
+    grid-row-start: span 2;
+}
+
+.itemGaleria:nth-child(6) {
+    grid-column-start: span 2;
+}
+
+.itemGaleria:nth-child(10) {
+    grid-row: span 2;
+}
+
+.itemGaleria:nth-child(15) {
+    grid-column: span 2;
+}
+
+.itemGaleria:nth-child(16) {
+    grid-column: span 2;
+}
+
+.itemGaleria:nth-child(17) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.itemGaleria:nth-child(20) {
+    grid-row-start: span 2;
+
+}
+
+.itemGaleria:nth-child(23) {
+    grid-column: span 2;
+}
+
+.itemGaleria:nth-child(24) {
+    grid-column: span 2;
+}
+
+
+/* productos */
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+    /* border: rgb(10, 10, 10) solid 2px; */
+    border-radius: 5px;
+    /* padding: 20px; */
+    margin: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    /* background-color: white; */
+    padding: 50px;
+
+}
+.fotoproducto {
+    width: 290px;
+    /* border-radius: 10px; */
+    object-fit: cover;
+    border: yellow 2px solid;
+    border-radius: 10px;
+
+}
+.precio {
+    color: black;
+    text-transform: uppercase;
+    margin:0px;
+}
+.descripcionproducto {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: larger;
+    margin: 3px;
+}
