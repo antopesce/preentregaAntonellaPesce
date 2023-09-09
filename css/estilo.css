@@ -1,65 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap');
 
-body {
+.mibody {
     font-family: 'Open Sans', sans-serif;
     color: black;
     background-color: rgb(252, 242, 228);
     margin: 0;
 }
 
-
 /* header */
-
-header {
+/* header {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
-    /* border-bottom: solid black 1px; */
-}
+} */
 
-.tienda {
-    font-size: 20px;
-    font-weight: 220;
-    width: 120px;
-    background-color: yellow;
-    border: solid black 3px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.logoIo {
+.milogo {
     height: 130px;
-    cursor: pointer
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 20;
 }
 
-li {
+.mifondo {
+    background-color: rgb(252, 242, 228);
+}
+
+.banner {
+    background-color: rgb(36, 35, 35);
+    color: rgb(238, 238, 228);
+    width: 100%;
+    top: 0
+}
+
+.textobanner {
+    color: aliceblue;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.itemlista{
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
-    /* font-weight: bold; */
     font-size: 20px;
-    margin: 0px 20px;
+    margin: 0px 3px;
 }
 
 /* index */
 
 .fotoinicio {
+
     display: flex;
     flex-direction: row;
-    margin:5px 10px;
+    margin: 5px 10px;
     justify-content: center;
     align-items: center;
 }
 
 .fotoppal {
+
     border: yellow solid 2px;
     border-radius: 15px;
     object-fit: contain;
+    height: 575px;
 }
 
 /* Contacto */
+
 
 .contacto {
     display: flex;
@@ -81,7 +89,14 @@ li {
     border-radius: 20px;
     padding: 20px 10px;
     font-size: 20px;
+}
 
+.contenedorFormulario {
+    margin: 10px 200px 10px 200px;
+    padding: 20px 10px;
+    background-color: antiquewhite;
+    border: yellow 2px solid;
+    border-radius: 20px;
 }
 
 label,
@@ -256,6 +271,7 @@ p {
     padding: 50px;
 
 }
+
 .fotoproducto {
     width: 290px;
     /* border-radius: 10px; */
@@ -264,11 +280,13 @@ p {
     border-radius: 10px;
 
 }
+
 .precio {
     color: black;
     text-transform: uppercase;
-    margin:0px;
+    margin: 0px;
 }
+
 .descripcionproducto {
     text-transform: uppercase;
     text-decoration: none;
